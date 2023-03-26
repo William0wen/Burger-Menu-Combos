@@ -24,6 +24,7 @@ for combo_id, combo_info in combos.items():
 
     for key in combo_info:
         print(f"{key}: ${combo_info[key]}")
+        # Add price to total price
         total_combo_price += combo_info[key]
 
     print(f"Total: ${round(total_combo_price, 2)}")
