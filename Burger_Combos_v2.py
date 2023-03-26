@@ -18,14 +18,17 @@ def print_menu():
     print("---------------------------")
 
 
+# Add a new item to the menu
 def add_item():
     print("add_item")
 
 
+# Edit an existing menu item
 def edit_item():
     print("edit_item")
 
 
+# Delete existing menu item
 def delete_item():
     print("del_item")
 
@@ -50,6 +53,7 @@ choice = ""
 # Main
 print_menu()
 
+# Main menu loop
 while choice != "Z":
     choice = input("\n\nWhat would you like to do?"
                    "\nAdd menu item (A)"
