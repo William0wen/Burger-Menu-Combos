@@ -1,5 +1,5 @@
 # Burger combos V4 - 28/03/2023
-# Allows the user to edit existing combos on the menu
+# Allows the user to edit existing combos on the menu by adding a new item or changing an existing item
 
 # Print the full menu, including total prices.
 def print_menu():
@@ -43,7 +43,7 @@ def edit_item():
     existing_id = input("\nEnter the ID of the combo you want to edit: ").upper()
     if existing_id in combos:
 
-        # Allows user to edit existing item or keep it the same in a existing combo
+        # Allows user to edit existing item or keep it the same in an existing combo
         new_main = input(f"\nEnter {existing_id}'s new main item ('x' to keep the same): ").title()
         if new_main != "X":
             new_m_price = float(input(f"Enter {new_main}'s price: $"))
